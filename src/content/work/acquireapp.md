@@ -1,0 +1,38 @@
+---
+title: Acquire App
+publishDate: 2023-02-14 15:39:00
+img: /assets/acquireapp-main.png
+img_alt: Acquire App
+description: |
+  Development of Acquire App, the one page e-commerce platform.
+tags:
+- Vue
+---
+
+### Project context
+
+Acquire App, a California-based startup, enlisted the expertise of Kumojin, a digital product development company, to develop their product: a one page e-commerce platform.
+
+Acquire offers dynamic landing pages that allow businesses to personalize the buying experience for customers. 
+
+The pages enable businesses to use Facebook, Instagram, TikTok, or Google Ads to drive sales with native discounts, subscriptions, pre/post-purchase upsells, and a frictionless checkout experience. 
+
+Businesses can create exclusive on-page discounts and pre/post-purchase funnels with customizable triggers based on customer behavior. 
+
+They can also add a subscription management system and personalize emails and SMS to improve sales and increase ROI. 
+
+With pre-authentication technology, the Acquire App can fast track the checkout process and pre-fill personal information for a seamless shopping experience.
+
+<img src="/assets/acquireapp-screenshot.png" alt="Acquireapp screenshot">
+
+### Our role
+
+We were a team of 5 developers in charge of building the platform (front-office for customers and back-office for merchants) from A to Z.
+
+### My contribution
+
+Development of several components and features of the application.
+
+### Technological Stack
+
+Vue, vuex, Jest, Storybook, GraphQL, CircleCI.

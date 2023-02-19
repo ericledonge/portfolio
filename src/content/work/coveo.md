@@ -1,6 +1,6 @@
 ---
 title: Coveo Insight Panel Builder
-publishDate: 2023-02-15 15:39:00
+publishDate: 2023-02-19 15:39:00
 img: /assets/coveo-main.webp
 img_alt: Beneva Mobile App
 description: |
