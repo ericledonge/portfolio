@@ -27,11 +27,15 @@ We were a team of 5 frontend developers (2 senior, 3 intermediate) and 1 ops dev
 
 We developed and put online the first version of the application in 8 months.
 
-### Example of achievements
+### My contribution
 
-Development of the insurance card registration functionality in the Apple Wallet. 
+Development of the feature to display the insurance card in the Apple Wallet.
 
 Graphic improvement of the HomeScreen. 
+
+Implementation of the state manager Zustand.
+
+Development of the feature flipping system (with Unleash).
 
 Improvement of development practices with the implementation of Atomic Design. 
 
