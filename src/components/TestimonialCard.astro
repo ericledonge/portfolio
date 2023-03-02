@@ -1,0 +1,52 @@
+---
+const { imageSrc, name, role, date, description } = Astro.props;
+---
+
+<div class="cards">
+  <div class="card">
+    <img src={imageSrc} alt={name} class="avatar" />
+    <p class="name">{name}</p>
+    <p class="role">{role}</p>
+    <p class="date">{date}</p>
+    <p class="description">{description}</p>
+  </div>
+</div>
+
+<style lang="scss">
+  .card {
+    margin: 1.5rem;
+    max-width: 20rem;
+    padding: 1.5rem;
+    background-color: #202022;
+
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out;
+
+    .avatar {
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+    }
+
+    .date {
+      color: #bb86fc;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &:nth-child(even) {
+      transform: translateY(8px);
+    }
+
+    &:nth-child(n) {
+      transform: rotate(-5deg);
+    }
+  }
+
+  .cards:hover > .card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+</style>

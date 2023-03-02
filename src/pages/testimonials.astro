@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
+import TestimonialCard from "../components/TestimonialCard.astro";
 ---
 
 <BaseLayout
@@ -15,7 +16,47 @@ import Hero from "../components/Hero.astro";
         align="start"
       />
 
-      <img src="/assets/testimonials.png" alt="testimonials" />
+      <div class="container">
+        <TestimonialCard
+          imageSrc="/assets/testimonials/andre.jpeg"
+          name="André M."
+          role="Mobile & fullstack software engineer"
+          date="October 27, 2022"
+          description="Méthodique et minutieux, Éric est un développeur qui a un souci de qualité et ceci transparaît dans son code car il tente toujours de programmer de manière à ce que ça soit facile à comprendre et à maintenir et il prend le temps de découper en mode composantes réutilisables. Son approche dans un projet permet de tirer le projet vers le haut en termes de précision (pixel perfect) et de maintenabilité."
+        />
+
+        <TestimonialCard
+          imageSrc="/assets/testimonials/samir.jpeg"
+          name="Samir H."
+          role="Lead developer"
+          date="May 11, 2022"
+          description="J'ai eu la chance de bosser avec Éric, qui est une excellente personne. Hyper professionnel avec plusieurs cordes à son arc, tant au niveau du dev qu'au niveau gestion de projet. Superbe expérience de mettre en place un projet avec lui."
+        />
+
+        <TestimonialCard
+          imageSrc="/assets/testimonials/maxime.jpeg"
+          name="Maxime D."
+          role="Software architect"
+          date="May 6, 2022"
+          description="Travailler avec Éric est un réel plaisir! C'est un joueur d'équipe qui s'applique à fond dans son travail et qui garde un grand focus sur la qualité et la solidité du produit livré."
+        />
+
+        <TestimonialCard
+          imageSrc="/assets/testimonials/marie.jpeg"
+          name="Marie-Pier G."
+          role="MBA | Marketing advisor"
+          date="April 27, 2022"
+          description="J'ai été ravie de travailler avec Eric sur un projet de développement d'une application mobile. Il est un excellent joueur d'équipe et est toujours prêt à partager ses idées pour améliorer le projet !"
+        />
+
+        <TestimonialCard
+          imageSrc="/assets/testimonials/mylene.jpeg"
+          name="Mylène T."
+          role="Développeuse fullstack"
+          date="October 4, 2021"
+          description="J'ai travaillé en collaboration avec Éric lors d'un stage et il m'a grandement aidée, notamment lorsque venait le temps de mieux comprendre la méthodologie de travail à adopter pour développer efficacement du front-end. Il était toujours prêt à aider et j'ai constaté qu'il avait le souci de se tenir à jour dans sa pratique."
+        />
+      </div>
 
       <p>
         Discover more testimonials on my
@@ -26,3 +67,10 @@ import Hero from "../components/Hero.astro";
     </main>
   </div>
 </BaseLayout>
+
+<style lang="scss">
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+</style>
