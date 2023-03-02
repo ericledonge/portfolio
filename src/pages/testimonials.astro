@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+  title="Testimonials | Eric Le Donge"
+  description="Listen to testimonials about Eric Le Donge's most recent projects."
+>
+  <div class="stack gap-20">
+    <main class="wrapper stack gap-8">
+      <Hero
+        title="Testimonials"
+        tagline="Listen to testimonials about my most recent projects."
+        align="start"
+      />
+
+      <img src="/assets/testimonials.png" alt="testimonials" />
+
+      <p>
+        Discover more testimonials on my
+        <a href="https://www.linkedin.com/in/ericledonge/" target="_blank">
+          Linkedin Page
+        </a>
+      </p>
+    </main>
+  </div>
+</BaseLayout>
