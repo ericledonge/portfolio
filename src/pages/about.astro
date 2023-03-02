@@ -2,9 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
-
-import CVen from "../assets/cv/Eric_Le_Donge-Frontend_Developer.pdf";
-import CVfr from "../assets/cv/Eric_Le_Donge-Developpeur_frontend.pdf";
 ---
 
 <BaseLayout title="About | Eric Le Donge" description="About Eric Le Donge">
@@ -101,8 +98,14 @@ import CVfr from "../assets/cv/Eric_Le_Donge-Developpeur_frontend.pdf";
       <section>
         <h2 class="section-title">Curriculum Vitae</h2>
         <ul>
-          <li><a href={CVen} download>Curriculum Vitae in english</a></li>
-          <li><a href={CVfr} download>Curriculum Vitae in french</a></li>
+          <li>
+            <a href="/assets/cv/Eric_Le_Donge-Frontend_Developer.pdf" download
+              >Curriculum Vitae in english</a>
+          </li>
+          <li>
+            <a href="/assets/cv/Eric_Le_Donge-Developpeur_frontend.pdf" download
+              >Curriculum Vitae in french</a>
+          </li>
         </ul>
       </section>
     </main>
