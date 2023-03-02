@@ -1,106 +1,175 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import CVen from "../assets/cv/Eric_Le_Donge-Frontend_Developer.pdf";
+import CVfr from "../assets/cv/Eric_Le_Donge-Developpeur_frontend.pdf";
 ---
 
 <BaseLayout title="About | Eric Le Donge" description="About Eric Le Donge">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/velo.jpg"
-					alt="Fatbike"
-				/>
-			</Hero>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <img width="1553" height="873" src="/assets/velo.jpg" alt="Fatbike" />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Passionate about computer development, volleyball and outdoor sports, summer and winter.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Master in Information Management, SciencesPo Paris, 2005</p>
-					<p>Master in Computer Science and Management, University of Paris, 2004</p>
-				</div>
-			</section>
-			{/*<section>*/}
-			{/*	<h2 class="section-title">Skills</h2>*/}
-			{/*	<div class="content">*/}
-			{/*		<p>officia unde omnis</p>*/}
-			{/*	</div>*/}
-			{/*</section>*/}
-		</main>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+          <p>Methodologies</p>
+          <ul>
+            <li>Test Driven Development (TDD)</li>
+            <li>Behavior Driven Development (BDD)</li>
+            <li>Component Driven Development, Atomic Design</li>
+            <li>AI Driven Development (with Copilot, ChatGPT)</li>
+            <li>XP, Scrum, Kanban</li>
+          </ul>
+          <p>Languages</p>
+          <ul>
+            <li>JavaScript, TypeScript</li>
+            <li>HTML, CSS</li>
+          </ul>
+          <p>Frameworks</p>
+          <ul>
+            <li>SPA: React, React Native, Vue</li>
+            <li>Meta-frameworks: Next, Astro</li>
+          </ul>
+          <p>Libraries</p>
+          <ul>
+            <li>State Managers: Redux, Rematch, Zustand, vuex</li>
+            <li>Style: Tailwind, Mantine, Material UI, Vuetify</li>
+            <li>Tests: Storybook, Jest, Testing Library, Cypress, Eslint</li>
+          </ul>
+          <p>Tooling</p>
+          <ul>
+            <li>Cloud: Firebase, Supabase, Netlify</li>
+            <li>API: REST, GraphQL</li>
+            <li>CI/CD: Github Actions, Docker</li>
+            <li>Package Managers: Npm, Yarn, Pnpm</li>
+            <li>Sources Mgt: Git, Github, Gitlab, Bitbucket</li>
+            <li>Project Mgt: Jira, Confluence</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div>
+          <ul>
+            <li>TDD and Clean Architecture for the Web, Wealcome, 2020</li>
+            <li>
+              Maintainable and Testable Web Architectures, Elapse Technologies,
+              2020
+            </li>
+            <li>
+              Certified Scrum Master Professional (PSM I), Scrum.org, 2018
+            </li>
+            <li>
+              Certified Product Owner Professional (PSPO I), Scrum.org, 2015
+            </li>
+            <li>
+              Certified Enterprise Architect (TOGAF), The Open Group, 2014
+            </li>
+            <li>
+              <b>Master in Information Management</b>, SciencesPo Paris, 2005
+            </li>
+            <li>
+              <b>Master in Computer Science and Management</b>, University of
+              Paris, 2004
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Passions</h2>
+        <div>
+          <ul>
+            <li>Play with my 9 year old son</li>
+            <li>Web and mobile development</li>
+            <li>Volleyball</li>
+            <li>
+              Outdoor sports: mountain bike, windsurf, fatbike, cross-country
+              ski
+            </li>
+            <li>Boardgames (eurogames)</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <ul>
+          <li><a href={CVen} download>Curriculum Vitae in english</a></li>
+          <li><a href={CVfr} download>Curriculum Vitae in french</a></li>
+        </ul>
+      </section>
+    </main>
 
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  .skills ul {
+    padding-bottom: 10px;
+  }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>

@@ -19,9 +19,7 @@ The company used a low-code/no-code approach to simplify the process and reduce 
 
 Coveo created a graphical user interface (GUI) builder that allows non-technical users to configure an Insight Panel from start to finish.
 
-Coveo hopes that the GUI builder will empower users to easily and quickly create a proof-of-concept search page using their own indexed content. 
-
-Technical users can customize the agent's panel further by using the configuration ID. 
+Coveo hopes that the GUI builder will empower users to easily and quickly create a proof-of-concept search page using their own indexed content.
 
 The new Insight Panel Builder aims to put the power in the hands of new and non-technical users, allowing them to create and modify the latest version of the insight panel and its components.
 
