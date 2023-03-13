@@ -1,0 +1,21 @@
+---
+import Pill from "./Pill.astro";
+
+interface Props {
+  pills: string[];
+}
+
+const { pills } = Astro.props;
+---
+
+<div class="container">
+  {pills.map((pill) => <Pill>{pill}</Pill>)}
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+</style>
